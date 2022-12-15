@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Alert</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <style>
+      @font-face {
+        font-family: Nueue, Helvetica;
+        src: url("../assets/Helvetica-Neue-Font/Helvetica Neue LTW0697BlkCnObl/Helvetica Neue LTW0697BlkCnObl.otf");
+      }
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 21rem;    /* Footer height */
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 20rem;            /* Footer height */
+}
+    </style>
+
+    <section id="page-container">
+        <main class="p-6 mb-4" id  = "content-wrap">
+          <nav class="p-2 flex flex-row justify-between">
+            <img src="../assets/kredete-nav-logo.svg" alt="company logo" class="w-[20%] md:w-20" />
+    
+            <p class="text-slate-400 text-[12px] md:text-sm">December 7, 2022 8:33AM</p>
+          </nav>
+          <hr />
+          <article>
+            <h1 class="font-medium text-4xl mt-8">Hello Babatunde,</h1>
+            <p class="text-sm mt-3 text-justify">
+              Please use the OTP below to verify your email address. Kindly note
+              this is only valid for 15 minutes from the time it was sent to you and
+              can only be used once.
+            </p>
+    
+            <p class="font-bold text-5xl text-blue-400 mt-3">159875</p>
+    
+            <p class="text-sm mt-8 text-justify">
+              If you did not take this action, please contact us immediately at
+              <span class="text-blue-400">support@kredete.com</span>
+            </p>
+            <p class="text-sm mt-8 text-justify">
+              Make better financial decisions when you know your credit today,
+              available on <span class="text-blue-400">Android</span> and <span class="text-blue-400">IOS</span>
+            </p>
+          </article>
+        </main>
+        <footer class="p-6 w-[100%]" style="background-color: #67089E;" id="footer">
+          <div class="flex flex-row justify-between items-center">
+            <img src="../assets/kredete-footer-logo.svg" alt="footer logo" class="w-[2rem] h-[20px] md:w-20 " />
+            <div class="flex justify-end gap-4 items-center w-[10rem] mt-0 md:mt-0">
+              <img src="../assets/facebook.svg" alt="facebook" class="w-2 md:w-4" />
+              <img src="../assets/twitter.svg" alt="twitter" class="w-2 md:w-4"/>
+              <img src="../assets/instagram.svg" alt="instagram" class="w-2 md:w-4"/>
+            </div>
+          </div>
+          <hr class="mt-1 md:mt-4 bg-slate-400" />
+    
+          <div class="flex mt-4 g-8 text-left flex-row justify-between items-center">
+            <div class="flex flex-col justify-between  text-white md:text-sm text-[8px]">
+                <p>1314, 447 Broadway, 2nd Floor NY,</p>
+                <p>New York 10013</p>
+            </div>
+    
+            <div class="flex flex-col justify-between g-4 text-white md:text-sm text-[8px]">
+                <p>Contact Support</p>
+                <p>Legal</p>
+                <p>FAQs</p>
+            </div>
+          </div>
+          <hr class="mt-1 md:mt-4 text-slate-100" />
+          <p class="text-white mt-2 text-left md:text-sm text-[8px]">Copyright © Kredete, 2022. All Rights reserved.</p>
+        </footer>
+    </section>
+  </body>
+</html>

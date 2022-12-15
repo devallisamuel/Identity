@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.banner {
+    width:50%;
+    height: 412px;
+    background-image: url(../assets/kredete-login-img.svg);
+}
