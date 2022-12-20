@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Reset Password Link</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+        }
+  </style>
+    <main class="flex flex-row h-full">
+        <section style="background-color: #67089E;" class=" hidden rounded-tr-3xl rounded-br-3xl md:flex md:h-full md:w-[50%]">
+            <div class="relative block md:h-full md:w-full">
+                <div class="h-[10%] ml-[15%] mt-8 p-6">
+                    <img src="../assets/kredete-yellow.svg" alt="company logo" class="mt-4">
+                    <h1 class="text-white font-bold text-4xl mt-2">Reset Password</h1>
+                </div>
+                
+                <img src="../assets/illustration.svg" alt="login image" style="background-color: #67089E;" class=" absolute bottom-0 hidden mt-4 h-[70%] md:flex md:w-full rounded-tr-3xl rounded-br-3xl object-fit">
+            </div>
+        </section>
+        <section class="flex flex-row justify-center w-full md:w-[50%]">
+            <div class="flex justify-start items-center md:justify-center md:items-start w-full p-10">
+                <div class="w-full">                    
+                    <img src="../assets/kredete-nav-logo.svg" alt="kredete logo" class="block md:hidden mt-4">
+                    <p class="text-right mt-8 text-sm md:text-lg font-bold text-[#67089E]">Go back</p>
+                    <h1 class="font-bold text-md md:text-4xl mt-8 md:mt-4">Reset Password Link Sent!</h1>
+                    <p class="text-sm md:text-md mt-0 md:mt-2">Please check your email <span class="font-bold">aoyebanjo@choplife.com</span> for the reset passsword link sent. Click on the link to reset your password.</p>
+
+                    <p class="mt-8 text-md text-[#67089E] font-bold">Wrong Email?</p>
+                    <p class="mt-8 text-md">Didn’t get email? <span class="text-[#67089E] font-bold">Resend Reset Password Link</span></p>
+                </div>
+                
+            </div>
+        </section>
+        <!-- modal -->
+        <div class=" hidden absolute right-6 md:right-2 top-[20px] w-[70%] md:w-1/4 gap-2 bg-[#EDFFF5]  flex-row rounded-md p-2" id="modal">
+            <div class="w-[7%] min-w-[20px]">
+                <img src="../assets/CheckCircle.svg" alt="notification" role="alert" class="w-5 mt-1">
+            </div>
+            <div class="flex flex-col w-[90%]" >
+            <h4 class="font-medium text-lg" id="header">Reset Password Link Sent Successfully</h4>
+            <p class="text-sm font-normal" id = "message">Check your email for the reset password link</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

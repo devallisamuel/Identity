@@ -16,6 +16,17 @@ export function validateEmail (email,errorState,emailError) {
 export function validatePassword (password,errorState,passwordError,passwordParent) {
         if (password.value === "" || !password.value.match(passwordFormat)) {
           errorState.passwordError = true;
+          passwordParent.style.border = "2px solid #EF4545";
+          return (passwordError.style.display = "block");
+        }
+        errorState.passwordError = false;
+        passwordParent.style.border = "2px solid #67089E";
+        passwordError.style.display = "none";
+}
+export function confirmValidatePassword (pass,errorState,passwordError,passwordParent) {
+        if (pass.value === "" || !pass.value.match(passwordFormat)) {
+          errorState.confirmPasswordError = true;
+          passwordParent.style.border = "2px solid #EF4545";
           return (passwordError.style.display = "block");
         }
         errorState.passwordError = false;

@@ -44,13 +44,6 @@ function handlePasswordChange (e) {
     dirtyState.passwordDirty = true;
      clearImage.style.display = "flex";
     isLoginReady();
-    // if (password.value === "" || !password.value.match(passwordFormat)) {
-    //       errorState.passwordError = true;
-    //       return passwordError.style.display = "block";
-    // }
-    // errorState.passwordError = false;
-    // // passwordParent.style.border = "2px solid #67089E";
-    // passwordError.style.display = "none";
     validatePassword(password,errorState,passwordError,passwordParent);
 }
 
@@ -83,5 +76,5 @@ closePassword.addEventListener("click", handleVisibility);
 clearImage.addEventListener("click", handleResetPassword);
 password.addEventListener("input", handlePasswordChange);
 password.addEventListener("focusin", () => {passwordParent.style.border = "2px solid #67089E";});
-password.addEventListener("focusout", () => {passwordParent.style.border = "none";});
+password.addEventListener("focusout", handlePasswordChange);
 button.addEventListener("click", onFormSubmit);
