@@ -31,12 +31,15 @@ const dirtyState = {
 };
 
 function isLoginReady() {
-  if (Object.values(dirtyState).every((val) => val === true)) {
-    button.disabled = true;
-    button.style.backgroundColor = "##CCADDF";
-  } else {
+  if (
+    Object.values(dirtyState).every((val) => val === true) &&
+    Object.values(errorState).every((val) => val === false)
+  ) {
     button.removeAttribute("disabled");
     button.style.backgroundColor = "#67089E";
+} else {
+    button.disabled = true;
+    button.style.backgroundColor = "##CCADDF";
   }
 }
 

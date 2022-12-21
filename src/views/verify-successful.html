@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Verification Link Sent</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        /* body {
+            height: 100%;
+        } */
+  </style>
+    <main class="flex flex-row h-fit">
+        <section style="background-color: #FAF2FF;" class=" hidden relative rounded-tr-3xl rounded-br-3xl md:flex  md:w-[50%]">
+            <div class=" hidden  md:block md:w-full ">
+                <div class=" ml-[5%] mt-8 p-6">
+                    <img src="../assets/kredete-yellow.svg" alt="company logo" class="mt-4 mb-6">
+                    <h1 class=" font-bold text-4xl mt-2">Become a <span class="text-[#67089E]">Partner</span> and see your turnover skyrocket.</h1>
+                </div>
+                <div class="mt-0 ml-[5%] p-6 mb-10" id="parent">
+                    <div class="">
+                        <div class="flex items-center mb-[4px] lg:mb-[16px]">
+                            <img src="../assets/Megaphone.svg" alt="megaphone image" class="mr-1.5 flex self-start">
+                            <div class="">
+                                <h4 class="font-bold text-lg">Market to a wider range of people</h4>
+                                <p class="text-sm text-justify">Leverage on Kredete’s customer to reach a wide range of people to increase revenue for your business, a win-win situation for everyone involved.</p>
+                            </div>
+                        </div>
+    
+                        <div class="flex items-center pt-3 mb-[4px] lg:mb-[16px]">
+                            <img src="../assets/ChartPieSlice.svg" alt="pie" class="mr-1.5 flex self-start">
+                            <div class="">
+                                <h4 class="font-bold  text-lg">Market to a wider range of people</h4>
+                                <p class="text-sm  text-justify">Create a loan campaign based on your own terms and condition. Watch how your campaign is doing from all your customer in one place.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center pt-3">
+                            <img src="../assets/Cardholder.svg" alt="pie" class="mr-1.5 flex self-start">
+                            <div class="">
+                                <h4 class="font-bold  text-lg">Payment collection has never been this easy</h4>
+                                <p class="text-sm  text-justify">You don’t need to chase your lendee before you collect payment. You can collect it all right on our platform. Timely and easy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="../assets/rock.svg" alt="verification image" id="absolute" style="background-color: #67089E;" class="w-full mt-4 md:w-full object-cover rounded-br-3xl">
+            </div>
+        </section>
+        <section class="flex flex-row justify-center w-full md:w-[50%]">
+            <div class="flex flex-col gap-5 md:flex-row md:justify-center md:items-center w-full p-10">
+                <div class="w-full block md:hidden mt-4 mb-4">                    
+                    <img src="../assets/kredete-nav-logo.svg" alt="kredete logo" class="block md:hidden mt-4">
+                </div>
+                <div class="w-full h-[100vh] md:h-0 flex justify-center items-center  mt-6">
+                    <div>
+                        <img src="../assets//success.gif" alt="success gif" class="w-20 h-20 mx-auto md:w-40 md:h-40">
+                        <h4 class="md:font-bold text-center font-md text-lg md:text-3xl md:text-left">Email Verified Successfully</h4>
+                        <p class="text-sm text-center md:text-left">Your email has been successfully Verified and your account created.</p>
+                        <button class="w-full rounded-md text-white font-md text-center bg-[#67089E] p-2 mt-4">Proceed to Sign In</button>
+                    </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- modal -->
+        <div class=" hidden absolute right-6 md:right-2 top-[20px] w-[70%] md:w-1/4 gap-2 bg-[#EDFFF5]  flex-row rounded-md p-2" id="modal">
+            <div class="w-[7%] min-w-[20px]">
+                <img src="../assets/CheckCircle.svg" alt="notification" role="alert" class="w-5 mt-1">
+            </div>
+            <div class="flex flex-col w-[90%]" >
+            <h4 class="font-medium text-lg" id="header">Reset Password Link Sent Successfully</h4>
+            <p class="text-sm font-normal" id = "message">Check your email for the reset password link</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

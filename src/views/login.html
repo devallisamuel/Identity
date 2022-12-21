@@ -12,7 +12,7 @@
       href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
       rel="stylesheet"
     />
-    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-9" rel="stylesheet">
+    
     <script src="https://cdn.tailwindcss.com"></script>
     <script type="module" src="../js/utility.js" defer ></script>
     <script type="module" src="../js/login.js" defer ></script>
@@ -33,18 +33,23 @@
 
     body {
         height: 100vh;
+        font-family: 'Neue';
+    }
+     @font-face {
+    font-family: Neue;
+    src: url(../assets/fonts/pro-55-roman-189171-neue-helvetica-369213/HelveticaNeueLTPro-Roman.otf);
     }
   </style>
   <body>
     <main class="flex flex-row h-full">
-        <section style="background-color: #67089E;" class=" hidden rounded-tr-3xl rounded-br-3xl md:flex md:h-full md:w-[50%]">
+        <section style="background-color: #FAF2FF;" class=" hidden rounded-tr-3xl rounded-br-3xl md:flex md:h-full md:w-[50%]">
             <div class="relative block md:h-full md:w-full">
                 <div class="h-[10%] ml-[15%] mt-8 p-6">
                     <img src="../assets/kredete-yellow.svg" alt="company logo" class="mt-4">
-                    <h1 class="text-white font-bold text-4xl mt-2">Welcome Back!</h1>
+                    <h1 class=" font-bold text-4xl mt-[40px]">Welcome Back!</h1>
                 </div>
                 
-                <img src="../assets/illustration.svg" alt="login image" style="background-color: #67089E;" class=" absolute bottom-0 hidden mt-4 h-[70%] md:flex md:w-full rounded-tr-3xl rounded-br-3xl object-fit">
+                <img src="../assets/illustration.svg" alt="login image" style="background-color: #FAF2FF;" class=" absolute bottom-0 hidden mt-4 h-[70%] md:flex md:w-full rounded-tr-3xl rounded-br-3xl object-fit">
             </div>
         </section>
         <!-- <section style="background-color: #67089E;background-image: url(../assets/illustration.svg); background-size:contain; background-repeat: no-repeat; background-position: center; background-clip: padding-box; background-origin: padding-box;" class=" hidden rounded-tr-3xl rounded-br-3xl md:flex md:h-full md:w-[50%]">
@@ -54,10 +59,13 @@
             <div class="flex justify-start items-center md:justify-center md:items-start w-full p-10">
                 <div class="w-full">                    
                     <img src="../assets/kredete-nav-logo.svg" alt="kredete logo" class="block md:hidden mt-4">
-                    <p class="text-right mt-8 text-sm md:text-lg">Don’t have an account? <span class="font-bold" style="color:  #67089E;">Create Account</span></p>
+                    <p class="text-right mt-8 text-sm md:text-lg">Don’t have an account? <span class="font-bold hidden md:inline" style="color:  #67089E;">Create Account</span><span class="font-bold md:hidden inline" style="color:  #67089E;">Login</span></p>
                     <!-- <div class="mx-auto w-[50%]"> -->
-                        <h1 class="font-bold text-md md:text-4xl mt-8 md:mt-4">Jump right back in</h1>
-                        <p class="text-xs md:text-sm mt-0 md:mt-2">Pick up where you left off.</p>
+                        <h1 class="font-bold hidden md:block text-md md:text-4xl mt-8 md:mt-[8]">Jump right back in</h1>
+                        <p class="text-xs hidden md:block md:text-sm mt-0 md:mt-2">Pick up where you left off.</p>
+
+                        <h1 class="font-bold md:hidden block text-md md:text-4xl mt-8 md:mt-[8]">Set your Password</h1>
+                        <p class="text-xs md:hidden block md:text-sm mt-0 md:mt-2">Enter a new password and your password will change.</p>
                     <!-- </div> -->
     
                     <form action="" method = "post" class="mt-8" id="form">

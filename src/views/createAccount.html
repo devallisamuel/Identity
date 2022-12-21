@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="../styles/login.css"> -->
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Create Account</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="../js/utility.js" defer></script>
+    <script type="module" src="../js/createAccount.js" defer></script>
+</head>
+<body>
+    <style>
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        @font-face {
+        font-family: Neue;
+        src: url(../assets/fonts/pro-55-roman-189171-neue-helvetica-369213/HelveticaNeueLTPro-Roman.otf);
+        }
+
+        body {
+            /* height: 100%; */
+            font-family: 'Neue';
+        }
+        select#code option[value="1"]   { background-image:url(../assets/Nigeria.svg);   }
+  </style>
+    <main class="flex flex-row">
+        <section style="background-color: #FAF2FF;" class=" hidden relative rounded-tr-3xl rounded-br-3xl md:flex md:w-[50%]">
+            <div class=" hidden  md:block  md:w-full ">
+                <div class=" ml-[5%] mt-8 p-6">
+                    <img src="../assets/kredete-yellow.svg" alt="company logo" class="mt-2">
+                    <h1 class="font-bold text-4xl mt-6">Become a <span class="text-[#67089E]">Partner</span> and see your turnover skyrocket.</h1>
+                </div>
+                <div class="mt-0 ml-[5%] p-6">
+                    <div class="flex flex-col ">
+                        <div class="flex items-center">
+                            <img src="../assets/Megaphone.svg" alt="megaphone image" class="mr-1.5 flex self-start">
+                            <div class="mb-[8px] lg:mb-[24px]">
+                                <h4 class="font-bold text-[20px]">Market to a wider range of people</h4>
+                                <p class="text-sm text-justify leading-[20px]">Leverage on Kredete’s customer to reach a wide range of people to increase revenue for your business, a win-win situation for everyone involved.</p>
+                            </div>
+                        </div>
+    
+                        <div class="flex items-center pt-3 mb-[8px] lg:mb-[24px]">
+                            <img src="../assets/ChartPieSlice.svg" alt="pie" class="mr-1.5 flex self-start">
+                            <div class="">
+                                <h4 class="font-bold text-[20px]">Analytics that work</h4>
+                                <p class="text-sm  text-justify leading-[20px]">Create a loan campaign based on your own terms and condition. Watch how your campaign is doing from all your customer in one place.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center pt-3">
+                            <img src="../assets/Cardholder.svg" alt="card" class="mr-1.5 flex self-start">
+                            <div class="">
+                                <h4 class="font-bold text-[20px]">Payment collection has never been this easy</h4>
+                                <p class="text-sm text-justify leading-[20px]">You don’t need to chase your lendee before you collect payment. You can collect it all right on our platform. Timely and easy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="../assets/rock.svg" alt="verification image" style="background-color: #67089E;" class="absolute bottom-0 w-full h-[10rem] mt-4  md:block md:w-full object-cover rounded-br-3xl">
+            </div>
+        </section>
+        <section class="flex sticky flex-row justify-center w-full md:w-[50%] overflow-y-auto">
+            <div class="flex justify-start items-center md:justify-center md:items-start w-full p-10">
+                <div class="w-full">                    
+                    <img src="../assets/kredete-nav-logo.svg" alt="kredete logo" class="block md:hidden mt-4">
+                    <p class="text-right mt-8 text-sm md:text-lg">Already have an account? <span class="text-[#67089E] font-bold">Log in</span></p>
+                        <h1 class="font-bold text-2xl md:text-4xl mt-8 md:mt-4">Create Account</h1>
+                        <p class="text-md md:text-md mt-0 md:mt-2">Sign up to offer your services to our diverse customers</p>
+    
+                    <form action="" method = "" class="mt-8" id="form">
+                        <div class="mb-4">
+                            <label for="email" class="text-md">
+                                Business Email
+                            </label>
+                            <input type="email" name="email" maxlength="30" id="email" placeholder="E.g janedoe@example.com" class="block text-sm w-full rounded-md bg-[#F6F6F6] h-8 border-black focus:outline-[#67089E] indent-3 md:h-12">
+                            <p class="text-red-400 text-sm hidden" id = "emailError">Email Address does not belong to any user</p>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="name" class="text-md">
+                                First Name
+                            </label>
+                            <input type="text" name="name" maxlength="30" id="name" placeholder="E.g jane" class="block text-sm w-full rounded-md bg-[#F6F6F6] h-8 border-black focus:outline-[#67089E] indent-3 md:h-12">
+                        </div>
+                        <div class="mb-4">
+                            <label for="last name" class="text-md">
+                                Last Name
+                            </label>
+                            <input type="text" name="last-name" maxlength="30" id="last name" placeholder="E.g doe" class="block text-sm w-full rounded-md bg-[#F6F6F6] h-8 border-black focus:outline-[#67089E] indent-3 md:h-12">
+                        </div>
+                        <!-- phone number -->
+                        <div class="mb-4 w-full">
+                             <label for="phoneNumber" class="text-md">
+                                Phone Number
+                            </label>
+                            <div class="flex items-center">
+                                <!-- <img src="../assets/Nigeria.svg" alt=""> -->
+                                <select name="code" id="code" class="block text-sm w-[30%] md:w-[20%] rounded-md bg-[#F6F6F6] h-8 indent-3 md:h-12">
+                                    <option value="1">+234</option>
+                                </select>
+                                <input type="tel" name="phoneNumber" maxlength="20" id="phoneNumber" placeholder="Enter your Phone Number" class="block text-sm w-full rounded-md bg-[#F6F6F6] h-8 border-black focus:outline-[#67089E] indent-3 md:h-12">
+                            </div>
+                        </div>
+
+                        <div class="mb-4">
+                            <label for="designation" class="text-md">
+                                Designation
+                            </label>
+                            <input type="text" name="designation" maxlength="10" id="designation" placeholder="E.g Manager" class="block text-sm w-full rounded-md bg-[#F6F6F6] h-8 border-black focus:outline-[#67089E] indent-3 md:h-12">
+                        </div>
+
+                        <div>
+                            <label for="password" class="mt-4 text-md">
+                                Password
+                            </label>
+                            <div class="flex rounded-md pr-2 bg-[#F6F6F6] h-8 indent-3 md:h-12" id="password-parent">
+                                <input type="password" name="password" maxlength="30" id="password" placeholder="Enter Password" class="block text-sm w-full bg-transparent focus:outline-none md:h-12 indent-3">
+                                <img src="../assets/XCircle.svg" alt="clear field logo" class="hidden w-5" id="clear">
+                                <img src="../assets/EyeSlash.svg" alt="toggle" class="w-5" id = "close">
+                                <img src="../assets/openEye.svg" alt="toggle" class="hidden w-5" id="open">
+                            </div>
+                            <p 
+                            class="text-[#777676] text-sm text-justify hidden" 
+                            id = "passwordError">
+                                Password should be made up of alphabets and  numbers of 8 characters (Acceptable character are A-Z a-z 1-9 ! @ # $ *)
+                            </p>
+                        </div>
+
+                        <div class="flex items-center mt-4">
+                            <div>
+                                <input type="checkbox" name="terms" id="checkbox" class=" w-4 h-4">
+                                <label for="terms text-md">I agree on behalf of my company, to the <span class="text-md font-medium text-[#67089E]">Terms of use</span> and <span class="text-md font-medium text-[#67089E]">Privacy Policy</span></label>
+                            </div>
+                        </div>
+
+                        <button 
+                        type = "submit" 
+                        class="text-white text-sm text-center px-2 w-full rounded-md h-8 md:h-10 mt-4 font-medium md:-lg mb-4 focus:border-none focus:outline-none" 
+                        style="background-color: #CCADDF;" 
+                        id="submit"
+                        disabled = "true" 
+                        >
+                            Create Account
+                        </button>
+                    </form>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/dist/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/login.css">
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Wrong Email</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="../js/utility.js" defer></script>
+    <script type="module" src="../js/wrongEmail.js" defer></script>
+</head>
+<body>
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/helvetica-neue-9');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        @font-face {
+        font-family: Neue;
+        src: url(../assets/fonts/pro-55-roman-189171-neue-helvetica-369213/HelveticaNeueLTPro-Roman.otf);
+        }
+        body {
+            font-family: 'Neue';
+        }
+
+        @media only screen and (min-width: 1180px) {
+             /* #parent {
+                position: relative;
+            }
+            #absolute {
+                position: absolute;
+                bottom: 0;
+            }  */
+        }
+  </style>
+    <main class="flex flex-row h-fit">
+        <section style="background-color: #FAF2FF;" class=" hidden relative rounded-tr-3xl rounded-br-3xl md:flex  md:w-[50%]">
+            <div class=" hidden  md:block md:w-full ">
+                <div class=" ml-[5%] mt-8 p-6">
+                    <img src="../assets/kredete-yellow.svg" alt="company logo" class="mt-4 mb-6">
+                    <h1 class=" font-bold text-4xl mt-2">Become a <span class="text-[#67089E]">Partner</span> and see your turnover skyrocket.</h1>
+                </div>
+                <div class="mt-0 ml-[5%] p-6" id="parent">
+                    <div class="">
+                        <div class="flex items-center mb-[4px] lg:mb-[16px]">
+                            <img src="../assets/Megaphone.svg" alt="megaphone image" class="mr-1.5 flex self-start">
+                            <div class="">
+                                <h4 class="font-bold text-lg">Market to a wider range of people</h4>
+                                <p class="text-sm text-justify">Leverage on Kredete’s customer to reach a wide range of people to increase revenue for your business, a win-win situation for everyone involved.</p>
+                            </div>
+                        </div>
+    
+                        <div class="flex items-center pt-3 mb-[4px] lg:mb-[16px]">
+                            <img src="../assets/ChartPieSlice.svg" alt="pie" class="mr-1.5 flex self-start">
+                            <div class="">
+                                <h4 class="font-bold  text-lg">Market to a wider range of people</h4>
+                                <p class="text-sm  text-justify">Create a loan campaign based on your own terms and condition. Watch how your campaign is doing from all your customer in one place.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center pt-3">
+                            <img src="../assets/Cardholder.svg" alt="pie" class="mr-1.5 flex self-start">
+                            <div class="">
+                                <h4 class="font-bold  text-lg">Payment collection has never been this easy</h4>
+                                <p class="text-sm  text-justify">You don’t need to chase your lendee before you collect payment. You can collect it all right on our platform. Timely and easy.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <img src="../assets/rock.svg" alt="verification image" id="absolute" style="background-color: #67089E;" class="w-full mt-4 md:w-full object-cover rounded-br-3xl">
+            </div>
+        </section>
+        <section class="flex flex-row justify-center w-full md:w-[50%]">
+            <div class="flex md:justify-center md:items-start w-full p-10">
+                <div class="w-full">                    
+                    <img src="../assets/kredete-nav-logo.svg" alt="kredete logo" class="block md:hidden mt-2">
+                    <p class="text-right mt-8 text-sm md:text-lg font-bold text-[#67089E]">Go back</p>
+                    <!-- <div class="w-[100%]"> -->
+                        <h1 class="font-bold text-md md:text-4xl mt-8 md:mt-4">Wrong Email?</h1>
+                        <p class="text-xs md:text-sm mt-0 md:mt-2">Enter the correct email to verify your account. Don’t worry, you don’t have to enter the details you’ve entered again.</p>
+                    <!-- </div> -->
+    
+                    <form action="" method = "post" class="mt-8" id="form">
+                        <div class="mb-4">
+                            <label for="email" class="text-xl">
+                                Business Email
+                            </label>
+                            <input type="email" name="email" maxlength="30" id="email" placeholder="E.g janedoe@example.com" class="block text-sm w-full rounded-md bg-[#F6F6F6] h-8 border-black focus:outline-[#67089E] indent-3 md:h-12">
+                            <p class="text-red-400 text-sm hidden" id = "emailError">Email Address does not belong to any user</p>
+                        </div>
+
+                        <button 
+                        type = "submit" 
+                        class="text-white text-sm text-center px-2 w-full rounded-md h-8 md:h-10 mt-4 font-medium md:-lg" 
+                        style="background-color: #CCADDF;" 
+                        id="submit"
+                        disabled = "true" 
+                        >
+                            Send Verification Link
+                        </button>
+                    </form>
+                </div>
+                
+            </div>
+        </section>
+        <!-- modal -->
+        <div class=" hidden absolute right-6 md:right-2 top-[20px] w-[70%] md:w-1/4 gap-2 bg-[#EDFFF5]  flex-row rounded-md p-2" id="modal">
+            <div class="w-[7%] min-w-[20px]">
+                <img src="../assets/CheckCircle.svg" alt="notification" role="alert" class="w-5 mt-1">
+            </div>
+            <div class="flex flex-col w-[90%]" >
+            <h4 class="font-medium text-lg" id="header">Reset Password Link Sent Successfully</h4>
+            <p class="text-sm font-normal" id = "message">Check your email for the reset password link</p>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

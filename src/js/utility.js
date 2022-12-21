@@ -33,4 +33,3 @@ export function confirmValidatePassword (pass,errorState,passwordError,passwordP
         passwordParent.style.border = "2px solid #67089E";
         passwordError.style.display = "none";
 }
-
